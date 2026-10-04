@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+	char yaz[100];
+	char tut='a';
+	printf("Kelime veya cumle yaz-> ");
+	gets(yaz);
+	int i;
+	for(i=0;i<strlen(yaz);i++)
+	{
+		if(yaz[i]==tut)
+		{
+			yaz[i]='e';
+		}
+	}
+for(i=0;i<strlen(yaz);i++)
+{
+	printf("%c",yaz[i]);
+}
+
+	return 0;
+}
